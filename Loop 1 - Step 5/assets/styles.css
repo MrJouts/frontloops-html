@@ -1,0 +1,92 @@
+body {
+	font-family: Roboto;
+	height: 100vh;
+	background: transparent url(img/background.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	background-color: white;
+	padding: 4rem 3rem 3rem 3rem;
+	min-width: 340px;
+	border-radius: 5px;
+}
+
+/*Salida y destino*/
+.destino {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.pais-iniciales {
+	text-transform: uppercase;
+	color: #3b8acf;
+	font-family: Prompt;
+	font-weight: 900;
+	font-size: 3.5rem;
+	display: block;
+	margin: 0;
+	line-height: 100%;
+}
+
+.pais {
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.3);
+	font-weight: 600;
+}
+
+.separator {
+	width: 34px;
+	height: 6px;
+	background-color: #d3e6f4;
+}
+
+/*Generales*/
+.title {
+	text-transform: uppercase;
+	font-size: .9em;
+	font-weight: 560;
+	color: rgba(0,0,0,0.3);
+	display: block;
+	/*margin-bottom: .1rem;*/
+}
+
+.data {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+/*Vuelo*/
+.vuelo {
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.vuelo div {
+	flex: 1 1 33.33333333%;
+}
+
+/*Pasajero*/
+.pasajero {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pasajero-datos > div:not(:last-of-type) {
+	margin-bottom: 1.25rem;
+}
+
+.pasajero-datos .data {
+	text-transform: capitalize;
+}
+
+.pasajero img {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+}

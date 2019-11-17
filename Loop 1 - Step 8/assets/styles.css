@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #f8ebe9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto, sans-serif;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "Playfair Display";
+	font-weight: 500;
+	font-size: 4rem;
+	line-height: 120%;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+h1:after {
+	content: "";
+	width: 16%;
+	height: 4px;
+	display: block;
+	background-color: black;
+	position: absolute;
+	right: 7%;
+	bottom: 20%;
+}
+
+/*Icons*/
+
+.icon {
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: transparent no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.icon.icon-arrow-back {
+	background-image: url(img/arrow-back.svg);
+}
+
+.icon.icon-arrow-forward {
+	background-image: url(img/arrow-forward.svg);
+}
+
+/*Card*/
+.card {
+	max-width: 1000px;
+	background-color: #ffffff;
+	display: flex;
+}
+
+/*Columna 1*/
+.col-1 {
+	background: transparent url(img/background.jpg) no-repeat center center;
+	background-size: cover;
+	flex: 1 1 100%;
+	padding: 2.5rem 2rem;
+}
+
+.col-1 a {
+	display: flex;
+	align-items: center;
+}
+
+.col-1 a i {
+	margin-right: .25rem;
+}
+
+.back {
+	opacity: .5;
+	transition: opacity .3s ease-in-out;
+}
+
+.back:hover {
+	opacity: .8;
+}
+
+/*Columna 2*/
+
+.col-content {
+	padding: 10rem 6rem 6rem;
+}
+
+.col-2 ul {
+	list-style-type: none;
+	padding: 2.5rem 2rem;
+	margin: 0;
+	text-align: right;
+	float: right;
+	overflow: hidden;
+}
+
+.col-2 ul li {
+ 	float: left;
+ 	margin-left: 1.5rem;
+}
+
+.col-2 ul li a {
+	color: rgba(0,0,0,0.4);
+}
+
+.col-2 .active a, .col-2 ul li a:hover {
+	color: rgba(0,0,0,0.8);
+	transition: color .3s ease-in-out;
+}
+
+.author {
+	font-family: "Playfair Display";
+	font-size: 1.25rem;
+	margin-bottom: 2.5rem;
+}
+
+.post {
+	display: flex;
+}
+
+.post > div {
+	margin-right: 2.5rem;
+	flex: 1 1 700px;
+}
+
+.video {
+	position: relative;
+	display: block;
+	margin-bottom: .75rem;
+}
+
+.video img {
+	max-width: 100%;
+}
+
+.video .play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255,.7);
+	padding: .5rem;
+	border-radius: 50%;
+}
+
+.photos {
+	display: flex;
+	align-items: center;
+}
+
+.photos span {
+	margin-right: .25rem;
+}
+
+.post p {
+	margin: 0;
+	line-height: 180%;
+	font-weight: 300;
+}

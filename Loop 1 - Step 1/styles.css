@@ -1,0 +1,156 @@
+html, body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+
+	background: #85a5d5;
+	color: #a9a8ad;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: #fff;
+	box-shadow: 0 2vh 1vw rgba(0,0,0,0.2);
+	border-radius: 0.25vw;
+	
+	height: fit-content;
+	max-width: 80vw;
+	
+	text-align: center;
+}
+
+section ul{
+	display: flex;
+
+	list-style-type: none;
+	
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+section ul li{
+	flex-grow: 1;
+	flex-basis: 0;
+
+	padding: 1vw;
+	
+	border-radius: 1vw;
+}
+
+section ul li a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	
+	height: calc(100% - 10vh);
+	padding: 5vh 6vw;
+	transition: 0.2s ease-in all;
+
+	text-decoration: none;
+	border-radius: 0.25vw;
+}
+
+section ul:hover > li a {
+	filter: grayscale(1);
+	opacity: 0.5;
+}
+
+section ul:hover > li a:hover {
+	background: #f9f7f9;
+	filter: grayscale(0);
+	opacity: 1;
+}
+
+section ul li a h3{
+	color: #5573d0;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-top: 2em;
+	margin-bottom: 0;
+}
+
+section ul li a p{
+	color: #a9a8ad;
+	font-size: 0.75em;
+	margin: 1em 0 0;
+	line-height: 1.5;
+}
+
+section ul li a p:last-child{
+	color: #5573d0;
+	
+	display: flex;
+	font-size: 2em;
+	font-weight: 500;
+    line-height: 0.55;
+}
+
+section ul li a p:last-child::before{
+	content: '$';
+	font-size: 0.4em;
+	font-weight: 200;
+}
+
+section ul li a p:last-child::after{
+	content: ' / month';
+	font-size: 0.4em;
+	font-weight: 200;
+	align-self: flex-end;
+}
+
+section ul li a img{
+	min-height: 10vh;
+	min-width: 5vw;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 1000px)  {
+
+	html, body{
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: auto;
+	}
+	
+	section ul{
+		flex-direction: column;
+		width: fit-content;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	section{
+		overflow: scroll;
+		margin: 5vh 0;
+	}
+
+	section ul li a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		padding: 2.5vh 5vw;
+		transition: 0.2s ease-in all;
+
+		text-decoration: none;
+		border-radius: 0.25vw;
+	}
+
+}

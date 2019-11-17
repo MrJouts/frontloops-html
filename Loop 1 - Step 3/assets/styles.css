@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #16a085;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Roboto;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+p {
+	color: rgba(0,0,0,0.4);
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.card {
+	background: white url(img/bicycle.png) no-repeat center 200px;
+	background-size: contain;
+	border-radius: 5px;
+	padding: 3rem 4.5rem 12rem;
+	box-shadow: 0 15px 40px -10px rgba(0,0,0,0.4);
+}
+
+.card-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.user-profile {
+	background: transparent url(img/account.svg) no-repeat center center;
+	width: 24px;
+	height: 24px;
+	display: block;
+	padding: 1.25rem;
+	border: 1px solid rgba(0,0,0,0.125);
+	border-radius: 50%;
+	transition: all .2s ease-in-out;
+	text-indent: -900px;
+	overflow: hidden;
+}
+
+.user-profile:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.125);
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+ul li span {
+	color: #454545;
+	font-weight: 500;
+}
+
+ul li span:last-child {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #000;
+}
+
+.total {
+	font-size: 1.25em;
+	font-weight: 700;
+}
