@@ -8,30 +8,32 @@ body {
 	background-color: #f7cd75;
 	height: 100vh;
 	font-family: Roboto, sans-serif;
+	padding: 10%;
 }
 
 h2 {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 1.25em;
 }
 
 .card {
 	display: flex;
-	width: 900px;
+	width: 800px;
 	background-color: #fff;
 	overflow: hidden;
-	margin: 5% auto;
+	margin: 0 auto;
+	border-radius: 3px;
 }
 
 .col {
 	overflow: auto;
-	max-height: 400px;
-	padding: 2rem;
+	max-height: 444px;
+	padding: 2.5rem;
 }
 
 .col-1 {
 	background-color: #f2f2f2;
-	flex: 1 1 50%;
+	flex: 1 1 60%;
 }
 
 .col-2 {
@@ -44,7 +46,6 @@ h2 {
 	justify-content: space-between;
 	margin-bottom: 2.5rem;
 }
-
 
 .card-title a {
 	font-size: 0;
@@ -60,7 +61,7 @@ h2 {
 .card-mini {
 	background-color: #fff;
 	border: 1px solid rgba(0,0,0,.125);
-	border-radius: 3px;
+	border-radius: 5px;
 	padding: .75rem;
 	display: flex;
 	flex-direction: column;
@@ -72,6 +73,11 @@ h2 {
 
 }
 
+.card-mini.active, .card-mini:hover {
+	box-shadow: 0 0 0 2px #8898c7;
+	cursor: pointer;
+}
+
 .card-mini img {
 	max-width: 70px;
 	margin-bottom: .5rem;
@@ -79,4 +85,78 @@ h2 {
 
 .card-mini .card-number {
 	margin-bottom: .25rem;
+}
+
+/*Balance*/
+.price-balance {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.separator {
+	border: none;
+	height: 1px;
+	background-color: rgba(0,0,0,0.125);
+	margin-bottom: 2rem;
+}
+
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-item {
+	display: flex;
+	margin-bottom: 2rem;
+	align-items: center;
+}
+
+.list-minus, .list-plus {
+	font-size: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: red;
+	margin-right: 1.5rem;
+	border: 1px solid rgba(0,0,0,0.125);
+	border-radius: 50%;
+
+}
+
+.list-minus {
+	background: transparent url(img/minus.svg) no-repeat center center;
+	background-size: .75rem .75rem;
+}
+
+.list-plus {
+	background: transparent url(img/plus.svg) no-repeat center center;
+	background-size: .75rem .75rem;
+}
+
+/*Product*/
+.product {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: .15rem;
+}
+
+.product-details {
+	font-size: 13px;
+	font-weight: 500;
+	color: #aaa;
+}
+
+
+.product-price {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-left:  auto;
+}
+
+.product-price-minus {
+	color: #8898c7;
+}
+
+.product-price-plus {
+	color: #8dcf62;
 }
