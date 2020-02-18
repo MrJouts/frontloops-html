@@ -70,7 +70,7 @@ h2 {
 	color: #666666;
 	font-size: 15px;
 	font-weight: 500;
-
+	transition: box-shadow .2s linear;
 }
 
 .card-mini.active, .card-mini:hover {

@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1200px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*utilities*/
+.d-flex {
+	display: flex;
+}
+
+
+
+/*header*/
+
+header {
+
+}
+
+header h1 a {
+	font-size: 0;
+	/*background-color: red;*/
+	width: 44px;
+	height: 44px;
+	display: block;
+	background: transparent url(../img/logo.svg) center center no-repeat;
+}
+
+header .flex {
+	display: flex;
+
+}
+
+header nav {
+	margin-left: auto;
+}
